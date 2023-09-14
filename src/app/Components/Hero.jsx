@@ -10,26 +10,18 @@ import { Typewriter } from "react-simple-typewriter";
 const Hero = () => {
   return (
     <div>
-      <div className="bg-base-200 p-32">
-        <div className="">
-          {/* flex
-         flex-col lg:flex-row-reverse */}
-          {/* <img
-            src="https://i.ibb.co/wKjsyWz/photo-300x300-1.jpg"
-            className="max-w-sm rounded-lg shadow-2xl"
-            alt="picture"
-          /> */}
+      <div className="bg-base-200">
+        <div className="grid grid-row p-8">
           <div>
             <h1 className="text-5xl font-bold">Hello There</h1>
-            <h2 className="text-3xl my-3 ms-20">
-              I
-              <span className="text-secondary font-bold">
+            <h2 className="text-3xl my-3 ms-20 ">
+              <span className="text-secondary font-bold ">
                 <Typewriter
                   words={[
-                    " am Mohammad Manzurul Alam",
-                    " Love to design and code for Human-Interaction with Web System",
-                    " an CSE Graduated",
-                    " a Front End Developer",
+                    "I am Mohammad Manzurul Alam",
+                    "I Love to design and code for Human-Interaction with Web System",
+                    "I'm an CSE Graduated",
+                    "I'm a Front End Developer",
                   ]}
                   loop={false}
                   className="text-red-400"
@@ -41,11 +33,19 @@ const Hero = () => {
                 />
               </span>
             </h2>
-            <button className="btn btn-secondary">
-              <Link href="https://drive.google.com/file/d/12PYDZF_o4BO-uXk77tsdB35sE0VfF0vb/view?usp=drive_link">
-                Watch Resume
-              </Link>
-            </button>
+            <Link
+              className="btn btn-secondary my-3"
+              href="https://drive.google.com/uc?id=1pbKxUIG4Jc8_J-XXHQJP2I2FVVyBr4VF&export=download"
+            >
+              Download Resume
+            </Link>{" "}
+            <br />
+            <Link
+              className="btn btn-secondary my-3"
+              href="https://drive.google.com/uc?id=1pbKxUIG4Jc8_J-XXHQJP2I2FVVyBr4VF&export=download"
+            >
+              Watch Resume
+            </Link>
           </div>
         </div>
       </div>
