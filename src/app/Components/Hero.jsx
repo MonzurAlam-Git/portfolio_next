@@ -18,7 +18,7 @@ const Hero = () => {
               <span className="text-secondary font-bold ">
                 <Typewriter
                   words={[
-                    "I am Mohammad Manzurul Alam",
+                    "I am Md Manzurul Alam",
                     "I Love to design and code for Human-Interaction with Web System",
                     "I'm an CSE Graduated",
                     "I'm a Front End Developer",

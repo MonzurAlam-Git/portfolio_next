@@ -76,9 +76,10 @@ const Projects = () => {
                   </div>
                 ))}
               </div>
-              <button className="btn btn-success mt-10">
-                <Link href={livelink}>Live Site</Link>
-              </button>
+
+              <Link className="btn btn-success mt-10" href={livelink}>
+                Live Site
+              </Link>
             </div>
           </div>
         ))}
