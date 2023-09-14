@@ -33,19 +33,19 @@ const Hero = () => {
                 />
               </span>
             </h2>
-            <Link
+            <a
               className="btn btn-secondary my-3"
               href="https://drive.google.com/uc?export=download&id=1DxxhZTD3EuxK5TUD1zRUmWWxd28YDIpf"
             >
               Download Resume
-            </Link>{" "}
+            </a>{" "}
             <br />
-            <Link
+            <a
               className="btn btn-secondary my-3"
               href="https://drive.google.com/file/d/1DxxhZTD3EuxK5TUD1zRUmWWxd28YDIpf/view?usp=drive_link"
             >
               Watch Resume
-            </Link>
+            </a>
           </div>
         </div>
       </div>
