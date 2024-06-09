@@ -36,14 +36,14 @@ const Hero = () => {
             </h2>
             <a
               className="btn btn-secondary my-3"
-              href="https://drive.google.com/uc?export=download&id=1DxxhZTD3EuxK5TUD1zRUmWWxd28YDIpf"
+              href="https://drive.google.com/uc?export=download&id=1kdOjqc5cFw2kk303CGYVgl6wxFvp7Omb"
             >
               Download Resume
             </a>{" "}
             <br />
             <a
               className="btn btn-secondary my-3"
-              href="https://drive.google.com/file/d/1DxxhZTD3EuxK5TUD1zRUmWWxd28YDIpf/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1kdOjqc5cFw2kk303CGYVgl6wxFvp7Omb/view?usp=sharing"
             >
               Watch Resume
             </a>
