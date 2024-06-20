@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 
@@ -5,8 +6,11 @@ const AboutMe = () => {
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row">
-        <img
+        <Image
           src="https://i.ibb.co/thXZfmg/Whats-App-Image-2024-06-05-at-17-39-52-493bef4c.jpg"
+          alt="Descriptive alt text" // Provide meaningful alt text
+          width={500} // Set the correct width
+          height={300} // Set the correct height
           className="max-w-sm rounded-lg shadow-2xl"
         />
         <div className="ml-5">

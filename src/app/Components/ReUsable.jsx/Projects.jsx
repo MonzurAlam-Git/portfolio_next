@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Fade } from "react-awesome-reveal";
+import Image from "next/image";
 
 const Projects = () => {
   return (
@@ -56,13 +57,15 @@ const Projects = () => {
                 transition={{ ease: "easeInOut", duration: 1 }}
                 className="w-full h-full"
               >
-                <img
-                  src="https://i.ibb.co/DLdysvz/image.png"
-                  alt="Black and White Bicolor Cat"
-                  width={500}
-                  height={500}
-                  className="w-full h-full object-cover"
-                />
+                <div className="w-full h-full object-cover">
+                  <Image
+                    src="https://i.ibb.co/DLdysvz/image.png"
+                    alt="Black and White Bicolor Cat"
+                    width={500}
+                    height={500}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </motion.div>
             </div>
           </div>
