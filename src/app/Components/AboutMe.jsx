@@ -51,9 +51,6 @@ const AboutMe = () => {
             Watch Resume
           </a>
           <br />
-          <a className="btn btn-error my-3" href="/demo">
-            Experiment Component
-          </a>
         </div>
       </div>
     </div>

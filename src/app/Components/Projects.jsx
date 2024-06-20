@@ -13,6 +13,15 @@ const techLinks = [
     techs: ["React", "ExpressJS", "Node JS", "MongoDb"],
     livelink: "https://doctorsportal-11797.web.app/",
   },
+  {
+    id: 6,
+    name: "Medi-Quanta",
+    details:
+      "MediQuanta is a medical website built with the MERN stack (MongoDB, Express.js, React.js, Node.js) that empowers you to take control of your health journey through data-driven insights and personalized care ",
+    ss: "https://i.ibb.co/GsYsNRs/Screenshot-2024-06-20-124649.png",
+    techs: ["React", "ExpressJS", "Node JS", "MongoDb"],
+    livelink: "https://medi-quanta.vercel.app/",
+  },
 
   {
     id: 2,
@@ -25,7 +34,7 @@ const techLinks = [
   },
   {
     id: 3,
-    name: "Bong-Song",
+    name: "Song 2 Sing",
     details:
       "BongSong is a full stack website Musical Merchandise Warehouse which tracks down your musical store stock. You can synchronize your stock with this website Features Track down your stock , Request for more stock, Update Your Stock, Delete unnecessary stock, Information about the artist Live Site -- ",
     ss: "https://i.ibb.co/MDzb6pw/Whats-App-Image-2023-01-19-at-9-39-44-PM.jpg",
