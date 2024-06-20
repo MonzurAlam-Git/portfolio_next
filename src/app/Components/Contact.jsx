@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React from "react";
 
 const Contact = () => {
@@ -12,34 +13,69 @@ const Contact = () => {
           have a project in mind, a question, or just want to say hello, feel
           free to reach out!
         </p>
-        <div className="contact-info">
+        <div className="flex justify-center gap-3  ">
           {/* Email */}
           <p>
-            <strong>Email:</strong>{" "}
             <a href="mailto:monzur.alam.16@gmail.com">
-              monzur.alam.16@gmail.com
+              <Image
+                className="w-8"
+                alt=""
+                width={32} // You need to provide the actual width in pixels
+                height={32} // You need to provide the actual height in pixels
+                src="https://i.ibb.co/tm3b7kr/gmail-270021.png"
+                alt=""
+              />
             </a>
           </p>
           {/* Linked In */}
           <p>
-            <strong>LinkedIn:</strong>{" "}
             <a
               href="https://www.linkedin.com/in/monzuralam-webdev/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              linkedin
+              <Image
+                className="w-8"
+                alt=""
+                width={32} // You need to provide the actual width in pixels
+                height={32} // You need to provide the actual height in pixels
+                src="https://i.ibb.co/PCPfGKc/linkedin-2504923.png"
+                alt=""
+              />
             </a>
           </p>
           {/* Github */}
           <p>
-            <strong>GitHub:</strong>{" "}
             <a
               href="https://github.com/MonzurAlam-Git"
               target="_blank"
               rel="noopener noreferrer"
             >
-              github.com/MonzurAlam-Git
+              <Image
+                className="w-8"
+                alt=""
+                width={32} // You need to provide the actual width in pixels
+                height={32} // You need to provide the actual height in pixels
+                src="https://i.ibb.co/RcwfNSP/github-2504911.png"
+                alt=""
+              />
+            </a>
+          </p>
+          {/* facebook */}
+          <p>
+            <a
+              href="https://facebook.com/monzuradler"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                className="w-8"
+                alt=""
+                width={32} // You need to provide the actual width in pixels
+                height={32} // You need to provide the actual height in pixels
+                src="https://i.ibb.co/3hhmj42/facebook-2504903.png"
+                alt=""
+              />
             </a>
           </p>
         </div>
