@@ -21,8 +21,8 @@ const Hero = () => {
                     "Assalamualikum",
                     "I am Md Manzurul Alam",
                     "I Love to design and code for Human-Interaction with Web System",
-                    "I'm an CSE Graduated",
-                    "I'm a Front End Developer",
+                    "Iam an CSE Graduated",
+                    "Iam a Front End Developer",
                   ]}
                   loop={false}
                   className="text-red-400"

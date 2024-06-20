@@ -8,7 +8,7 @@ const Contact = () => {
       <div className="container">
         <h1>Contact with Me</h1>
         <p>
-          I'm always excited to connect with fellow developers, potential
+          I am always excited to connect with fellow developers, potential
           collaborators, and anyone interested in web development. Whether you
           have a project in mind, a question, or just want to say hello, feel
           free to reach out!
@@ -23,7 +23,6 @@ const Contact = () => {
                 width={32} // You need to provide the actual width in pixels
                 height={32} // You need to provide the actual height in pixels
                 src="https://i.ibb.co/tm3b7kr/gmail-270021.png"
-                alt=""
               />
             </a>
           </p>
@@ -40,7 +39,6 @@ const Contact = () => {
                 width={32} // You need to provide the actual width in pixels
                 height={32} // You need to provide the actual height in pixels
                 src="https://i.ibb.co/PCPfGKc/linkedin-2504923.png"
-                alt=""
               />
             </a>
           </p>
@@ -53,11 +51,10 @@ const Contact = () => {
             >
               <Image
                 className="w-8"
-                alt=""
+                alt="github"
                 width={32} // You need to provide the actual width in pixels
                 height={32} // You need to provide the actual height in pixels
                 src="https://i.ibb.co/RcwfNSP/github-2504911.png"
-                alt=""
               />
             </a>
           </p>
@@ -74,7 +71,6 @@ const Contact = () => {
                 width={32} // You need to provide the actual width in pixels
                 height={32} // You need to provide the actual height in pixels
                 src="https://i.ibb.co/3hhmj42/facebook-2504903.png"
-                alt=""
               />
             </a>
           </p>
