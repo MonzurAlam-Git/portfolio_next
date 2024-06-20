@@ -9,7 +9,7 @@ const AboutMe = () => {
           src="https://i.ibb.co/thXZfmg/Whats-App-Image-2024-06-05-at-17-39-52-493bef4c.jpg"
           className="max-w-sm rounded-lg shadow-2xl"
         />
-        <div>
+        <div className="ml-5">
           <h2 className="text-3xl my-3 ms-20 ">
             <span className="text-secondary font-bold ">
               <Typewriter
@@ -30,7 +30,7 @@ const AboutMe = () => {
               />
             </span>
           </h2>
-          <p className="py-6 text-xl">
+          <p className="py-6 text-xl ">
             Hi! I am Manzurul Alam, a Front End Developer. I have always been
             fascinated by how designs collaborate with web interactivity to
             create a blissful user experience. My expertise lies in building

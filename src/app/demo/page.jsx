@@ -1,5 +1,8 @@
+"use client";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { Typewriter } from "react-simple-typewriter";
 
 const Demo = () => {
   return (
@@ -15,7 +18,7 @@ const Demo = () => {
           </h1>
           {/*Background Text */}
           <h1 class="text-8xl font-bold text-white opacity-10 absolute top-0 left-0 transform -translate-y-2/4 translate-x-2/4">
-            A Front End Developer
+            Manzur
           </h1>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import ForegroundText from "./ReUsable.jsx/ForegroundText";
 
 const techLinks = [
   {
@@ -54,30 +55,34 @@ const techLinks = [
 const Projects = () => {
   return (
     <div className="container mx-auto">
-      <h1 className="text-primary text-3xl font-extrabold text-center">
-        Projects
-      </h1>
+      <ForegroundText
+        parentText="Explore My Projects"
+        childText="Projects"
+      ></ForegroundText>
       <div className="grid grid-cols-1 justify-center  lg:grid-cols-3 gap-5">
-        {/* <h1 className="text-red-500">Tech I use</h1> */}
-        {/* id,name,details,ss,techs,livelink */}
-        {techLinks.map(({ id, name, details, ss, techs, livelink }) => (
-          <div key={id} className="card m-5 bg-base-100 shadow-xl">
+        {techLinks.map((techLink) => (
+          <div key={techLink.id} className="card m-5 bg-base-100 shadow-xl">
             <figure>
               {/* <img src={ss} alt="Shoes" /> */}
-              <Image src={ss} alt="project" width={600} height={500}></Image>
+              <Image
+                src={techLink.ss}
+                alt="project"
+                width={600}
+                height={500}
+              ></Image>
             </figure>
             <div className="card-body">
-              <h2 className="card-title">{name}</h2>
-              <p>{details}</p>
+              <h2 className="card-title">{techLink.name}</h2>
+              <p>{techLink.details}</p>
               <div className="card-actions justify-end">
-                {techs.map((tech) => (
+                {techLink.techs.map((tech) => (
                   <div key={null} className="badge badge-secondary">
                     {tech}
                   </div>
                 ))}
               </div>
 
-              <Link className="btn btn-success mt-10" href={livelink}>
+              <Link className="btn btn-success mt-10" href={techLink.livelink}>
                 Live Site
               </Link>
             </div>
