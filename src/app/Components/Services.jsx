@@ -1,10 +1,15 @@
 import React from "react";
+import ForegroundText from "./ReUsable.jsx/ForegroundText";
 
 const Services = () => {
   return (
     <>
       {/* Component: Feature items with icon, title, and text */}
-      <div className="flex flex-col items-center gap-8 text-center">
+      <div className="flex flex-col items-center gap-8 text-center mb-10">
+        <ForegroundText
+          parentText="Services I Provide"
+          childText="Services"
+        ></ForegroundText>
         {/* Service 1: Responsive Design */}
         <div className="flex flex-col items-center gap-4">
           <div className="flex items-center text-emerald-500">
