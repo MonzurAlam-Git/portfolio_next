@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import ForegroundText from "./ReUsable.jsx/ForegroundText";
 
 const techLinks = [
@@ -63,7 +62,10 @@ const techLinks = [
 
 const Projects = () => {
   return (
-    <div className="container mx-auto">
+    <div
+      className="container mx-auto max-w-screen
+    "
+    >
       <ForegroundText
         parentText="Explore My Projects"
         childText="Projects"
