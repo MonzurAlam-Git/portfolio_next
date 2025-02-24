@@ -8,7 +8,7 @@ import TechUsed from "./Components/TechUsed";
 
 export default function Home() {
   return (
-    <main className=" min-h-screen  items-center justify-between">
+    <main className="items-center justify-between">
       <div>
         {/* <Hero></Hero> */}
         <AboutMe></AboutMe>

@@ -4,9 +4,9 @@ import Image from "next/image";
 const Contact = () => {
   return (
     <div>
-      <div className="container">
-        <h1>Contact with Me</h1>
-        <p>
+      <div className="h-screen ">
+        <h1 className="text-center">Contact with Me</h1>
+        <p className="text-center mx-auto">
           I am always excited to connect with fellow developers, potential
           collaborators, and anyone interested in web development. Whether you
           have a project in mind, a question, or just want to say hello, feel
