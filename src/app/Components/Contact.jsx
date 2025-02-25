@@ -12,7 +12,7 @@ const Contact = () => {
           have a project in mind, a question, or just want to say hello, feel
           free to reach out!
         </p>
-        <div className="flex justify-center gap-3  ">
+        <div className="flex justify-center gap-3 m-5 ">
           {/* Email */}
           <p>
             <a href="mailto:monzur.alam.16@gmail.com">
