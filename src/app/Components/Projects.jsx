@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import ForegroundText from "./ReUsable.jsx/ForegroundText";
 
 const techLinks = [
   {
@@ -11,6 +11,15 @@ const techLinks = [
     ss: "https://i.ibb.co/0h7mnpx/Whats-App-Image-2023-01-19-at-9-43-13-PM.jpg",
     techs: ["React", "ExpressJS", "Node JS", "MongoDb"],
     livelink: "https://doctorsportal-11797.web.app/",
+  },
+  {
+    id: 6,
+    name: "Medi-Quanta",
+    details:
+      "MediQuanta is a medical website built with the MERN stack (MongoDB, Express.js, React.js, Node.js) that empowers you to take control of your health journey through data-driven insights and personalized care ",
+    ss: "https://i.ibb.co/GsYsNRs/Screenshot-2024-06-20-124649.png",
+    techs: ["React", "ExpressJS", "Node JS", "MongoDb"],
+    livelink: "https://medi-quanta.vercel.app/",
   },
 
   {
@@ -24,7 +33,7 @@ const techLinks = [
   },
   {
     id: 3,
-    name: "Bong-Song",
+    name: "Song 2 Sing",
     details:
       "BongSong is a full stack website Musical Merchandise Warehouse which tracks down your musical store stock. You can synchronize your stock with this website Features Track down your stock , Request for more stock, Update Your Stock, Delete unnecessary stock, Information about the artist Live Site -- ",
     ss: "https://i.ibb.co/MDzb6pw/Whats-App-Image-2023-01-19-at-9-39-44-PM.jpg",
@@ -53,31 +62,38 @@ const techLinks = [
 
 const Projects = () => {
   return (
-    <div className="container mx-auto">
-      <h1 className="text-primary text-3xl font-extrabold text-center">
-        Projects
-      </h1>
+    <div
+      className="container mx-auto max-w-screen
+    "
+    >
+      <ForegroundText
+        parentText="Explore My Projects"
+        childText="Projects"
+      ></ForegroundText>
       <div className="grid grid-cols-1 justify-center  lg:grid-cols-3 gap-5">
-        {/* <h1 className="text-red-500">Tech I use</h1> */}
-        {/* id,name,details,ss,techs,livelink */}
-        {techLinks.map(({ id, name, details, ss, techs, livelink }) => (
-          <div key={id} className="card m-5 bg-base-100 shadow-xl">
+        {techLinks.map((techLink) => (
+          <div key={techLink.id} className="card m-5 bg-base-100 shadow-xl">
             <figure>
               {/* <img src={ss} alt="Shoes" /> */}
-              <Image src={ss} alt="project" width={600} height={500}></Image>
+              <Image
+                src={techLink.ss}
+                alt="project"
+                width={600}
+                height={500}
+              ></Image>
             </figure>
             <div className="card-body">
-              <h2 className="card-title">{name}</h2>
-              <p>{details}</p>
+              <h2 className="card-title">{techLink.name}</h2>
+              <p>{techLink.details}</p>
               <div className="card-actions justify-end">
-                {techs.map((tech) => (
+                {techLink.techs.map((tech) => (
                   <div key={null} className="badge badge-secondary">
                     {tech}
                   </div>
                 ))}
               </div>
 
-              <Link className="btn btn-success mt-10" href={livelink}>
+              <Link className="btn btn-success mt-10" href={techLink.livelink}>
                 Live Site
               </Link>
             </div>
